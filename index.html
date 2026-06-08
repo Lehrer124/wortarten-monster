@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Monster-Futter</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <header>
+        <h1>🍽️ Monster-Futter</h1>
+
+        <div id="stats">
+            <span>⭐ Sterne: <span id="stars">0</span></span>
+            <span>🏆 Level: <span id="level">1</span></span>
+            <span>🎯 Punkte: <span id="score">0</span></span>
+            <span>👑 Highscore: <span id="highscore">0</span></span>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="wordArea">
+            <div id="word" draggable="true">Hund</div>
+            <div id="feedback"></div>
+        </section>
+
+        <section id="progressContainer">
+            <div id="progressBar"></div>
+        </section>
+
+        <section id="monsterArea">
+
+            <div class="monster" data-type="Nomen">
+                <img src="nomen.jpg" alt="Nomen">
+                <div class="mouth">👄</div>
+                <h2>Nomen</h2>
+            </div>
+
+            <div class="monster" data-type="Artikel">
+                <img src="artikel.png" alt="Artikel">
+                <div class="mouth">👄</div>
+                <h2>Artikel</h2>
+            </div>
+
+            <div class="monster" data-type="Pronomen">
+                <img src="pronomen.jpg" alt="Pronomen">
+                <div class="mouth">👄</div>
+                <h2>Pronomen</h2>
+            </div>
+
+            <div class="monster" data-type="Adjektiv">
+                <img src="adjektiv.png" alt="Adjektiv">
+                <div class="mouth">👄</div>
+                <h2>Adjektiv</h2>
+            </div>
+
+            <div class="monster" data-type="Verb">
+                <img src="verb.png" alt="Verb">
+                <div class="mouth">👄</div>
+                <h2>Verb</h2>
+            </div>
+
+        </section>
+
+    </main>
+
+    <audio id="eatSound" src="eat.mp3"></audio>
+    <audio id="wrongSound" src="wrong.mp3"></audio>
+    <audio id="levelSound" src="levelup.mp3"></audio>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
