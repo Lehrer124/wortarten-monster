@@ -52,6 +52,8 @@ const words = [
 
 ];
 
+let remainingWords = [];
+
 /* =====================================
 DOM-ELEMENTE
 ===================================== */
@@ -96,7 +98,21 @@ HILFSFUNKTIONEN
 ===================================== */
 
 function randomWord() {
-    return words[Math.floor(Math.random() * words.length)];
+
+    if (remainingWords.length === 0) {
+
+        remainingWords = [...words];
+
+        for (let i = remainingWords.length - 1; i > 0; i--) {
+
+            const j = Math.floor(Math.random() * (i + 1));
+
+            [remainingWords[i], remainingWords[j]] =
+            [remainingWords[j], remainingWords[i]];
+        }
+    }
+
+    return remainingWords.pop();
 }
 
 function nextWord() {
