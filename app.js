@@ -10,6 +10,11 @@ const words = [
     { word: "Baum", type: "Nomen" },
     { word: "Auto", type: "Nomen" },
     { word: "Haus", type: "Nomen" },
+    { word: "Maus", type: "Nomen" },
+    { word: "Pferd", type: "Nomen" },
+    { word: "Hexe", type: "Nomen" },
+    { word: "Löwe", type: "Nomen" },
+    { word: "Hose", type: "Nomen" },
 
     { word: "der", type: "Artikel" },
     { word: "die", type: "Artikel" },
@@ -22,18 +27,28 @@ const words = [
     { word: "wir", type: "Pronomen" },
     { word: "er", type: "Pronomen" },
     { word: "sie", type: "Pronomen" },
+    { word: "es", type: "Pronomen" },
 
     { word: "schön", type: "Adjektiv" },
+    { word: "traurig", type: "Adjektiv" },
+    { word: "müde", type: "Adjektiv" },
+    { word: "wütend", type: "Adjektiv" },
     { word: "klein", type: "Adjektiv" },
     { word: "groß", type: "Adjektiv" },
     { word: "lustig", type: "Adjektiv" },
     { word: "schnell", type: "Adjektiv" },
+    { word: "windig", type: "Adjektiv" },
 
     { word: "laufen", type: "Verb" },
+    { word: "stricken", type: "Verb" },
+    { word: "gucken", type: "Verb" },
+    { word: "denken", type: "Verb" },
     { word: "springen", type: "Verb" },
     { word: "spielen", type: "Verb" },
     { word: "essen", type: "Verb" },
-    { word: "trinken", type: "Verb" }
+    { word: "trinken", type: "Verb" },
+    { word: "zählen", type: "Verb" },
+
 
 ];
 
